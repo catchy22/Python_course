@@ -97,3 +97,12 @@ def number_9(value):
 print(number_9(2))
 print(number_9(5))
 print(number_9(10))
+
+#number_10
+lst=[2,4,5,8,9,13]
+i=0
+while i<len(lst):
+  lst[i]*=i
+  i+=1
+
+print(lst)
