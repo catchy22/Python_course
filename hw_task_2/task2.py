@@ -42,9 +42,9 @@ print(number_4(list_1,list_2))
 def number_6(func):
     def find_except(*args):
         try:
-            for value in args:
-                if type(value)!=int:
-                    raise ValueError
+           value=func(*args)
+           if type(value)!=int:
+               raise ValueError
         except ValueError:
             print(func.__name__,'содержит не int величину - ',value)
 
@@ -52,16 +52,16 @@ def number_6(func):
 
 
 @number_6
-def number_6a(*args):
-    return(args)
+def number_6a(a):
+    return a/2
 
-number_6a(8,4,13)
+number_6a(8)
 
 @number_6
-def number_6b(*args):
-    return(args)
+def number_6b(a):
+    return a+2
 
-number_6b(22,16,4,1.0,13)
+number_6b(8)
 
 
 def number_7(func):
