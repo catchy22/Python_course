@@ -15,6 +15,7 @@ model.fit(X_train,y_train)
 predicted=model.predict(X_train[:10])
 
 y_test=y_train[:10]
+
 print('predskazanya seti')
 print(predicted)
 print('\ncorrect answers')

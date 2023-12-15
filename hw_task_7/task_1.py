@@ -60,5 +60,5 @@ class task_7:
 
 photo3=task_7('img3.jpg',250,250)
 # photo3=task_7('img3.jpg')
-# video3=task_7('111.mp4',500,500)
+video3=task_7('111.mp4',500,500)
 
